@@ -1,0 +1,31 @@
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+# 作者信息
+author: 
+  name: 渣橙
+  email: zuckchen@gmail.com
+  link: http://blog.zuckchen.com
+  github: https://github.com/amazingmanthere
+
+# 站点信息
+title: 渣橙的博客 
+description: 渣橙的博客
+url: http://blog.zuckchen.com
+
+locals:
+  index_heading: 所有文章
+  navbar_title_index: 首页
+  navbar_title_archive: 归档
+  navbar_title_rss: RSS
+
+configs:
+  index_path: /index.html
+  archive_path: /pages/archive.html
+  rss_path: /pages/rss.xml
+  atom_path: /pages/atom.xml
+
