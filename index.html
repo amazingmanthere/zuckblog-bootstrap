@@ -5,5 +5,5 @@ layout: page
 <div class="panel panel-primary">
     <div class="panel-heading">{{ site.locals.index_heading }}：{{ paginator.total_posts }}</div>
     {% for post in site.posts %}
-    <a href='{{ post.url }}' class="list-group-item clearfix">{{post.title}}<span class="badge badge-info">{{ post.date | date:"%Y年%m月%d日" }}</span></a> {% endfor %}
+    <a href='{{ site.relativeurl }}{{ post.url }}' class="list-group-item clearfix">{{post.title}}<span class="badge badge-info">{{ post.date | date:"%Y年%m月%d日" }}</span></a> {% endfor %}
 </div>
