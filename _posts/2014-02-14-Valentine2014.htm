@@ -69,8 +69,8 @@ setInterval(function() {
 // ctx.textAlign = 'center';  
 // ctx.fillText("Kilroy was here", 150, 40); 
 
-var h = document.getElementById('haydeeCanvas');
-var ctx = h.getContext("2d");
+var canvas = document.getElementById('haydeeCanvas');
+var ctx = canvas.getContext("2d");
 
 ctx.font = "bold italic 60px serif";
 ctx.fillStyle = '#f00';
@@ -78,7 +78,7 @@ ctx.fillText("haydee", 55, 50);
 
 ctx.font = "bold italic 40px serif";
 // Create gradient
-var gradient = ctx.createLinearGradient(0, 0, h.width, 0);
+var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
 gradient.addColorStop("0", "magenta");
 gradient.addColorStop("0.5", "blue");
 gradient.addColorStop("1.0", "red");
