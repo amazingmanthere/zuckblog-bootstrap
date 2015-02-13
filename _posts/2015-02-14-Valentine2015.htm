@@ -5,7 +5,7 @@ layout: post
 <style type="text/css">
 #haydeeCanvas {
     display: block;
-    margin: 10px auto 0px auto; // 上、右、下、左
+    margin: 0px auto 0px auto; // 上、右、下、左
 }
 #roseCanvas {
     display: block;
@@ -26,8 +26,8 @@ document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
 </script>
 <script>
 with(m = Math) C = cos, S = sin, P = pow, R = random;
-c.width = c.height = f = 480;
-h = -240;
+c.width = c.height = f = 450;
+h = -225;
 
 function p(a, b, c) {
     if (c > 60) return [S(a * 7) * (13 + 5 / (.2 + P(b * 4, 4))) - S(b) * 50, b * f + 50, 625 + C(a * 7) * (13 + 5 / (.2 + P(b * 4, 4))) + b * 400, a * 1 - b / 2, a];
@@ -94,6 +94,6 @@ ctx.fillText("2015情人节快乐", 0, 130);
 };  
     if(isMobile.any()) {
         var c = document.getElementById('roseCanvas');
-        c.style.marginLeft = "-115px";
+        c.style.marginLeft = "-100px";
     }
 </script>
