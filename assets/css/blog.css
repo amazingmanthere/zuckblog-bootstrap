@@ -31,3 +31,13 @@ padding: 0 15px;
 color: #777;
 border-left: 4px solid #ddd;
 }
+
+#footer .copyright { 
+    display: inline-block;
+    text-align:center; 
+}
+
+#footer .social { 
+     display: inline-block;
+    text-align:center; 
+}
